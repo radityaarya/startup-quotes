@@ -4,6 +4,7 @@ var controller = require('../controllers/quote_controller.js')
 
 router.get('/', controller.showQuote)
 router.post('/', controller.createQuote)
+router.post('/seed', controller.seed)
 
 // router.get('/', function(req, res, next) {
 //   res.render('index', { title: 'Express' });
